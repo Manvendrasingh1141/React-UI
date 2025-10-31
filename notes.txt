@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+</head>
+<body>
+    <div id="mydiv">
+        <table class="mx-auto" id="tableData">
+            <tr class="border m-4">
+                <td class="border p-4 bg-blue-400 w-40 text-center">Name</td>
+                <td class="border p-4 bg-blue-400 w-40 text-center">Age</td>
+                <td class="border p-4 bg-blue-400 w-40 text-center">Occupation</td>
+            </tr>
+        </table>
+        <button  id="mytbn" class="mx-auto bg-pink-400 rounded p-2 text-center text-white" onclick="ShowData()"> 
+          Show Data
+        </button>
+    </div>
+    <script>
+        let data = [
+            {
+                name:"Manvendra Singh",
+                age:20,
+                occupation:"Engineer"
+            },
+            {
+                name:"Kunal Singh",
+                age:21,
+                occupation:"Teacher"
+            },
+            {
+                name:"Sahil Singh",
+                age:20,
+                occupation:"Doctor"
+            }
+        ]
+        
+        function ShowData(){
+          const tableData = document.getElementById("tableData")
+          data.map((val,idx)=>{
+            tableData.innerHTML+=`
+            <tr class="border m-4">
+                <td class="border p-4 bg-blue-200 w-40 text-center">${val.name}</td>
+                <td class="border p-4 bg-blue-200 w-40 text-center">${val.age}</td>
+                <td class="border p-4 bg-blue-200 w-40 text-center">${val.occupation}</td>
+            </tr>
+            `
+          })
+        }
+    </script>
+</body>
+</html>
+
+
+
+
+
+React (also known as React.js or ReactJS) is an open-source JavaScript library
+ for building user interfaces (UIs), particularly single-page applications.
+  Developed and maintained by Facebook, it is widely used for creating dynamic 
+  and interactive web applications.
+
+
+
+
+
+

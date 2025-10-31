@@ -1,0 +1,20 @@
+body{
+    background-color: black;
+    color: white;
+}
+
+.page1{
+    width: full;
+    height: 100vh;
+    background-color: black;
+}
+.page2{
+    width: full;
+    height: 100vh;
+    background-color: pink;
+}
+.page3{
+    width: full;
+    height: 100vh;
+    background-color: white;
+}
